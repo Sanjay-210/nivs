@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml/png"
+      href="https://nivsjewels.com/assets/logo-DlyRvDZH.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nivs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/customefont.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+  </head>
+  <body style="overflow-x: clip">
+    <div id="root" style="overflow-x: clip"></div>
+
+    <!--Popup Search-->
+
+    <div class="search-modal-wrapper modal fade" id="searchpopup">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="container">
+            <div class="search-modal">
+              <button
+                type="button"
+                class="btn-close close-search position-absolute"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <form
+                action="#"
+                method="get"
+                role="search"
+                class="search search-modal-form"
+              >
+                <div class="content-input">
+                  <div class="field position-relative">
+                    <input
+                      class="search-input field-input"
+                      placeholder="Search Products"
+                      autocomplete="off"
+                      autocapitalize="off"
+                    />
+                    <button
+                      class="search-button field-button position-absolute"
+                      aria-label="Search"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                      >
+                        <path
+                          d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="content-menu-search d-flex align-items-center flex-wrap"
+                >
+                  <div class="title">Trending Search:</div>
+                  <ul
+                    class="list-collection d-flex align-items-center overflow-auto"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        class="d-inline-block text-center theme-btn style-stroke position-relative overflow-hidden"
+                        >fashion</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="d-inline-block text-center theme-btn style-stroke position-relative overflow-hidden"
+                        >Clothes</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="d-inline-block text-center theme-btn style-stroke position-relative overflow-hidden"
+                        >New</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="d-inline-block text-center theme-btn style-stroke position-relative overflow-hidden"
+                        >Trends</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Cart -->
+
+    <div class="mini-cart-wrapper offcanvas offcanvas-end" id="cart-popup">
+      <div class="mini-cart-header">
+        <h2
+          class="mini-cart-title position-relative text-uppercase"
+          id="offcanvasLabel"
+        >
+          Shopping Cart
+        </h2>
+      </div>
+      <div
+        class="widget-shopping-cart overflow-hidden position-relative d-flex"
+      >
+        <div class="widget-shopping-cart-content d-flex overflow-hidden">
+          <div
+            class="widget-shopping-cart-body has-scrollbar position-relative"
+          >
+            <h3 class="item-count"><span>2 items</span></h3>
+            <ul class="cart-list">
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html">Plain Knitted Midi Skirt</a>
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html"
+                      >Distressed Boyfriend Jeans</a
+                    >
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="widget-shopping-cart-footer">
+            <table class="price-table">
+              <thead>
+                <tr class="cart-subtotal">
+                  <th>Subtotal</th>
+                  <td></td>
+                  <td>$250.00</td>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr class="order-total">
+                  <th>Total</th>
+                  <td></td>
+                  <td>
+                    <strong
+                      ><span class="amount"
+                        ><bdi><span>$</span>250.00</bdi></span
+                      ></strong
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="cart-footer-bottom">
+              <div class="cart-conditions">
+                <p>Tax included and shipping calculated at checkout</p>
+                <label for="terms-and-conditions" class="terms-conditions">
+                  <input id="terms-and-conditions" type="checkbox" />
+                  <span
+                    >I agree with the <a href="#">Terms & Conditions</a></span
+                  >
+                </label>
+              </div>
+              <div
+                class="mini-cart-total-btns d-flex align-items-center justify-content-center flex-wrap"
+              >
+                <a
+                  href="cart.html"
+                  class="theme-btn style-stroke position-relative overflow-hidden"
+                  >View Cart</a
+                >
+                <a
+                  class="theme-btn position-relative overflow-hidden"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- wishlist -->
+    <div class="mini-cart-wrapper offcanvas offcanvas-end" id="wishlist-popup">
+      <div class="mini-cart-header">
+        <h2
+          class="mini-cart-title position-relative text-uppercase"
+          id="offcanvasLabel"
+        >
+          wishlist
+        </h2>
+      </div>
+      <div
+        class="widget-shopping-cart overflow-hidden position-relative d-flex"
+      >
+        <div class="widget-shopping-cart-content d-flex overflow-hidden">
+          <div
+            class="widget-shopping-cart-body has-scrollbar position-relative"
+          >
+            <h3 class="item-count"><span>2 items</span></h3>
+            <ul class="cart-list">
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html">Plain Knitted Midi Skirt</a>
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html"
+                      >Distressed Boyfriend Jeans</a
+                    >
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="widget-shopping-cart-footer">
+            <table class="price-table">
+              <thead>
+                <tr class="cart-subtotal">
+                  <th>Subtotal</th>
+                  <td></td>
+                  <td>$250.00</td>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr class="order-total">
+                  <th>Total</th>
+                  <td></td>
+                  <td>
+                    <strong
+                      ><span class="amount"
+                        ><bdi><span>$</span>250.00</bdi></span
+                      ></strong
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="cart-footer-bottom">
+              <div class="cart-conditions">
+                <p>Tax included and shipping calculated at checkout</p>
+                <label for="terms-and-conditions" class="terms-conditions">
+                  <input id="terms-and-conditions" type="checkbox" />
+                  <span
+                    >I agree with the <a href="#">Terms & Conditions</a></span
+                  >
+                </label>
+              </div>
+              <div
+                class="mini-cart-total-btns d-flex align-items-center justify-content-center flex-wrap"
+              >
+                <a
+                  href="cart.html"
+                  class="theme-btn style-stroke position-relative overflow-hidden"
+                  >View Cart</a
+                >
+                <a
+                  class="theme-btn position-relative overflow-hidden"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login -->
+    <div class="mini-cart-wrapper offcanvas offcanvas-end" id="login-popup">
+      <div class="mini-cart-header">
+        <h2
+          class="mini-cart-title position-relative text-uppercase"
+          id="offcanvasLabel"
+        >
+          login
+        </h2>
+      </div>
+      <div
+        class="widget-shopping-cart overflow-hidden position-relative d-flex"
+      >
+        <div class="widget-shopping-cart-content d-flex overflow-hidden">
+          <div
+            class="widget-shopping-cart-body has-scrollbar position-relative"
+          >
+            <h3 class="item-count"><span>2 items</span></h3>
+            <ul class="cart-list">
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html">Plain Knitted Midi Skirt</a>
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+              <li
+                class="mini-cart-item position-relative d-flex align-items-start"
+              >
+                <div
+                  class="mini-cart-item-btns d-flex align-items-center position-absolute"
+                >
+                  <a
+                    href="#"
+                    class="remove-from-cart-button d-inline-flex align-items-center justify-content-center"
+                    rel="nofollow"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Remove this item"
+                  >
+                    <i class="fa-solid fa-xmark"></i>
+                  </a>
+                  <div
+                    class="cart-product-edit_variant d-inline-flex align-items-center justify-content-center"
+                    data-toggle="tooltip"
+                    data-bs-placement="top"
+                    data-bs-title="Edit this item"
+                    data-bs-original-title=""
+                    title=""
+                  >
+                    <svg class="icon icon-pen">
+                      <use xlink:href="#icon-pen"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-product-img">
+                  <a href="product-detail2.html">
+                    <img
+                      src="assets/images/resources/cart-img1.jpg"
+                      alt="product"
+                    />
+                  </a>
+                </div>
+                <div class="mini-cart-item-content">
+                  <div class="cart-product-info_variant">
+                    <span>Bown / XL</span>
+                  </div>
+                  <h3 class="mini-cart-item-title">
+                    <a href="product-detail2.html"
+                      >Distressed Boyfriend Jeans</a
+                    >
+                  </h3>
+                  <div class="product-price">
+                    <span class="price">
+                      <span class="amount">
+                        <bdi><span>$</span>19.85</bdi>
+                      </span>
+                    </span>
+                  </div>
+                  <div class="product-quantity js-quantity-selector">
+                    <input type="number" value="1" min="1" max="10" step="1" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="widget-shopping-cart-footer">
+            <table class="price-table">
+              <thead>
+                <tr class="cart-subtotal">
+                  <th>Subtotal</th>
+                  <td></td>
+                  <td>$250.00</td>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr class="order-total">
+                  <th>Total</th>
+                  <td></td>
+                  <td>
+                    <strong
+                      ><span class="amount"
+                        ><bdi><span>$</span>250.00</bdi></span
+                      ></strong
+                    >
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="cart-footer-bottom">
+              <div class="cart-conditions">
+                <p>Tax included and shipping calculated at checkout</p>
+                <label for="terms-and-conditions" class="terms-conditions">
+                  <input id="terms-and-conditions" type="checkbox" />
+                  <span
+                    >I agree with the <a href="#">Terms & Conditions</a></span
+                  >
+                </label>
+              </div>
+              <div
+                class="mini-cart-total-btns d-flex align-items-center justify-content-center flex-wrap"
+              >
+                <a
+                  href="cart.html"
+                  class="theme-btn style-stroke position-relative overflow-hidden"
+                  >View Cart</a
+                >
+                <a
+                  class="theme-btn position-relative overflow-hidden"
+                  href="checkout.html"
+                  >Checkout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- scripts-->
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/bootstrap-input-spinner.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/fancybox.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <!-- <script src="assets/js/custom-script.js?v=2"></script> -->
+    <script src="assets/js/mainscript.js?v=1"></script>
+  </body>
+</html>

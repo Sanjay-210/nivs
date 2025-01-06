@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../assets/webfonts/icomoon7a18.eot?efsf0q');
+  src:  url('../../assets/webfonts/icomoon7a18.eot?efsf0q#iefix') format('embedded-opentype'),
+    url('../../assets/webfonts/icomoon7a18.ttf?efsf0q') format('truetype'),
+    url('../../assets/webfonts/icomoon7a18.woff?efsf0q') format('woff'),
+    url('../../assets/webfonts/icomoon7a18.svg?efsf0q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  /* speak : never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e927";
+}
+.icon-comment:before {
+  content: "\e928";
+}
+.icon-icon-list:before {
+  content: "\e929";
+}
+.icon-star:before {
+  content: "\e92a";
+}
+.icon-icon-compare:before {
+  content: "\e92b";
+}
+.icon-icon-view:before {
+  content: "\e92c";
+}
+.icon-testimonial:before {
+  content: "\e92d";
+}
+.icon-arrow:before {
+  content: "\e92e";
+}
+.icon-calender:before {
+  content: "\e92f";
+}
+.icon-brand-tag:before {
+  content: "\e930";
+}
+.icon-star-full:before {
+  content: "\e931";
+}
+.icon-icon-login:before {
+  content: "\e932";
+}
+.icon-basket:before {
+  content: "\e900";
+}
+.icon-boots:before {
+  content: "\e901";
+}
+.icon-bracelet:before {
+  content: "\e902";
+}
+.icon-clothing:before {
+  content: "\e903";
+}
+.icon-delivery:before {
+  content: "\e904";
+}
+.icon-delivery-man:before {
+  content: "\e905";
+}
+.icon-diamond:before {
+  content: "\e906";
+}
+.icon-diamond-2:before {
+  content: "\e907";
+}
+.icon-direction:before {
+  content: "\e908";
+}
+.icon-dress:before {
+  content: "\e909";
+}
+.icon-earrings:before {
+  content: "\e90a";
+}
+.icon-engagement-ring:before {
+  content: "\e90b";
+}
+.icon-espadrille:before {
+  content: "\e90c";
+}
+.icon-flash:before {
+  content: "\e90d";
+}
+.icon-flat-shoes:before {
+  content: "\e90e";
+}
+.icon-free-delivery:before {
+  content: "\e90f";
+}
+.icon-gift:before {
+  content: "\e910";
+}
+.icon-gift-box:before {
+  content: "\e911";
+}
+.icon-high-heels:before {
+  content: "\e912";
+}
+.icon-jacket:before {
+  content: "\e913";
+}
+.icon-jacket-2:before {
+  content: "\e914";
+}
+.icon-jewellery:before {
+  content: "\e915";
+}
+.icon-light-bolt:before {
+  content: "\e916";
+}
+.icon-like:before {
+  content: "\e917";
+}
+.icon-pants:before {
+  content: "\e918";
+}
+.icon-phone-4:before {
+  content: "\e919";
+}
+.icon-profile:before {
+  content: "\e91a";
+}
+.icon-pyramid:before {
+  content: "\e91b";
+}
+.icon-rain-boots:before {
+  content: "\e91c";
+}
+.icon-return:before {
+  content: "\e91d";
+}
+.icon-ring:before {
+  content: "\e91e";
+}
+.icon-sandal:before {
+  content: "\e91f";
+}
+.icon-shoe:before {
+  content: "\e920";
+}
+.icon-shopping-cart:before {
+  content: "\e921";
+}
+.icon-slippers:before {
+  content: "\e922";
+}
+.icon-slippers-2:before {
+  content: "\e923";
+}
+.icon-sneakers:before {
+  content: "\e924";
+}
+.icon-user:before {
+  content: "\e925";
+}
+.icon-wedding-ring:before {
+  content: "\e926";
+}
